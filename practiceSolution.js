@@ -316,11 +316,10 @@ console.log(averageOfArray([2, 4, 6])); // Expected: 4
 function keepEvenNumbers(numbers) {
   let result = [];
   // TODO: loop and push only even numbers
-for(let number of numbers)
-  if(number%2===0)
-  {
-    result.push(number)
-  }
+  for (let number of numbers)
+    if (number % 2 === 0) {
+      result.push(number);
+    }
   return result;
 }
 
@@ -329,24 +328,25 @@ console.log(keepEvenNumbers([3, -5, 8, -1, 0])); // Expected: [8, 0]
 // Task 13-8A: List an Object's Keys
 // Problem Statement:
 // Write a function listKeys that takes an object and returns an array containing its property names (keys).
-// Input
-// Output
-// { name: "Sam", age: 25, city: "Dhaka" }
-// ["name", "age", "city"]
+// Input                                    Output
+// { name: "Sam", age: 25, city: "Dhaka" }  ["name", "age", "city"]
 
 // Starter Snippet:
 // // Input: an object
 // // Output: array of the object's keys
 // // Returns: an array
 
-// function listKeys(obj) {
-//   let keys = [];
-//   // TODO: loop through the object and collect its keys
+function listKeys(obj) {
+  let keys = [];
+  // TODO: loop through the object and collect its keys
+  for (let key in obj) {
+    keys.push(key);
+  }
 
-//   return keys;
-// }
+  return keys;
+}
 
-// console.log(listKeys({ name: "Sam", age: 25, city: "Dhaka" }));
+console.log(listKeys({ name: "Sam", age: 25, city: "Dhaka" }));
 // // Expected: ["name", "age", "city"]
 
 // Task 13-8B: Get a Value or a Default
