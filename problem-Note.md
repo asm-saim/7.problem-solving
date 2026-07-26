@@ -4,5 +4,5 @@
 //reverse only exist in array, if we want to reverse a "String", 
 firstly, we need to split(S-A) , then join(A-S) 
 
-//includes(a single value) exits both string and array. 
+//includes(a single value expected) exists both string and array. 
 

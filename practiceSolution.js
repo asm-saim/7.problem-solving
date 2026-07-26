@@ -216,7 +216,7 @@ function findShortestWord(sentence) {
       shortest = word;
     }
 
-  return shortest;
+  return shortest; 
 }
 
 console.log(findShortestWord("JavaScript is a fun language")); // Expected: "a"
