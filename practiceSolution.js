@@ -185,13 +185,9 @@ console.log(removeFirstAndLast("hello")); // Expected: "ell"
 
 function isPalindrome(str) {
   // TODO: reverse the string and compare it to the original
-let strToArr=str.split("");
-
-  if (strToArr.join("") === strToArr.reverse().join("")) {
-    return true;
-  } else {
-    return false;
-  }
+  let strToArr = str.split("");
+  strToArr.join("") === strToArr.reverse().join("");
+  return true;
 }
 
 console.log(isPalindrome("level")); // Expected: true
@@ -211,12 +207,16 @@ console.log(isPalindrome("hello")); // Expected: false
 // // Output: the shortest word
 // // Returns: a string
 
-// function findShortestWord(sentence) {
-//   let words = sentence.split(" ");
-//   let shortest = words[0];
-//   // TODO: loop through words and compare lengths
+function findShortestWord(sentence) {
+  let words = sentence.split(" ");
+  console.log(words)
+  let shortest = words[0];
+  for (let word of words)
+    if (word.length < shortest.length) {
+      shortest = word;
+    }
 
-//   return shortest;
-// }
+  return shortest;
+}
 
-// console.log(findShortestWord("JavaScript is a fun language")); // Expected: "a"
+console.log(findShortestWord("JavaScript is a fun language")); // Expected: "a"
