@@ -414,9 +414,8 @@ function countArray(arr) {
   let count = 0;
   // TODO: write your loop here
 
-  for(let number of arr)
-  {
-    count+=1;
+  for (let number of arr) {
+    count += 1;
   }
 
   return count;
@@ -444,13 +443,13 @@ console.log(total); // Expected: 2
 // // Output: true or false
 // // Returns: a boolean
 
-// function isPerfectSquare(num) {
-//   // TODO: write your logic here
+function isPerfectSquare(num) {
+  // TODO: write your logic here
+  return Number.isInteger(Math.sqrt(num));
+}
 
-// }
-
-// console.log(isPerfectSquare(16)); // Expected: true
-// console.log(isPerfectSquare(20)); // Expected: false
+console.log(isPerfectSquare(16)); // Expected: true
+console.log(isPerfectSquare(20)); // Expected: false
 
 // 13-10B: Reverse the Word Order
 // Problem Statement: Write a function reverseWords that takes a sentence and returns it with the order of the words reversed (the letters inside each word stay the same).
@@ -463,12 +462,14 @@ console.log(total); // Expected: 2
 // // Output: sentence with word order reversed
 // // Returns: a string
 
-// function reverseWords(sentence) {
-//   // TODO: split into words, reverse the order, and join back together
+function reverseWords(sentence) {
+  // TODO: split into words, reverse the order, and join back together
+  let splited = sentence.split(" ").reverse().join(" ");
 
-// }
+  return splited;
+}
 
-// console.log(reverseWords("hello world")); // Expected: "world hello"
+console.log(reverseWords("hello world")); // Expected: "world hello"
 
 // 13-10C: Remove Duplicate Values from an Array
 // Problem Statement: Write a function removeDuplicates that takes an array of numbers and returns a new array where each value appears only once, keeping the first occurrence.
