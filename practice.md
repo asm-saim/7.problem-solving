@@ -1,4 +1,4 @@
-Module 13: Basic Problem Solving with JavaScript
+<!-- Module 13: Basic Problem Solving with JavaScript
 Practice Task
 Instructions for students:
 Every task must be solved using a function that returns a value (never just console.log inside the function).
@@ -7,7 +7,7 @@ Test your function using the provided console.log call at the bottom of each sta
 // Example format to follow for every task:
 // Input: a number
 // Output: "Positive", "Negative", or "Zero"
-// Returns: a string
+// Returns: a string -->
 
 
 

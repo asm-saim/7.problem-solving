@@ -18,4 +18,26 @@ function numberType(number) {
     return "Zero";
   }
 }
-console.log(numberType(-5));
+console.log(numberType(0))
+
+
+// Task 13-2A: Hot, Cold, or Normal
+// Problem Statement:
+// Write a function checkTemperature that takes a temperature (in Celsius) and returns "Hot" if it is 30 or above, "Cold" if it is 15 or below, and "Normal" otherwise.
+// Input
+// Output
+// 35
+// "Hot"
+// 10
+// "Cold"
+// 20
+// "Normal"
+function tempChecker(value) {
+  if (value > 30) {
+    return "Hot";
+  } else if (value < 15) {
+    return "Cold";
+  }
+  return "Normal";
+}
+console.log(tempChecker(20));
