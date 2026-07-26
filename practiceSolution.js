@@ -279,51 +279,52 @@ function countMultiplesOfThree(numbers) {
 }
 console.log(countMultiplesOfThree([3, 4, 6, 7, 9, 10])); // Expected: 3
 
-
-
 // Task 13-7A: Average of All Numbers
 // Problem Statement:
 // Write a function averageOfArray that takes an array of numbers and returns their average.
-// Input
-// Output
-// [2, 4, 6]
-// 4
+// Input         Output
+// [2, 4, 6]     4
 
 // Starter Snippet:
-// // Input: an array of numbers
-// // Output: the average of all numbers
-// // Returns: a number
+// Input: an array of numbers
+// Output: the average of all numbers
+// Returns: a number
 
-// function averageOfArray(numbers) {
-//   let total = 0;
-//   // TODO: loop through, sum the numbers, then divide by the count
+function averageOfArray(numbers) {
+  let total = 0;
+  // TODO: loop through, sum the numbers, then divide by the count
 
-//   return total;
-// }
+  for (let num of numbers) {
+    total += num;
+  }
+  return total / numbers.length;
+}
 
-// console.log(averageOfArray([2, 4, 6])); // Expected: 4
+console.log(averageOfArray([2, 4, 6])); // Expected: 4
 
 // Task 13-7B: Keep Only Even Numbers
 // Problem Statement:
 // Write a function keepEvenNumbers that takes an array of numbers and returns a new array with only the even numbers.
-// Input
-// Output
-// [3, -5, 8, -1, 0]
-// [8, 0]
+// Input              Output
+// [3, -5, 8, -1, 0]  [8, 0]
 
 // Starter Snippet:
 // // Input: an array of numbers
 // // Output: array with only even numbers
 // // Returns: an array
 
-// function keepEvenNumbers(numbers) {
-//   let result = [];
-//   // TODO: loop and push only even numbers
+function keepEvenNumbers(numbers) {
+  let result = [];
+  // TODO: loop and push only even numbers
+for(let number of numbers)
+  if(number%2===0)
+  {
+    result.push(number)
+  }
+  return result;
+}
 
-//   return result;
-// }
-
-// console.log(keepEvenNumbers([3, -5, 8, -1, 0])); // Expected: [8, 0]
+console.log(keepEvenNumbers([3, -5, 8, -1, 0])); // Expected: [8, 0]
 
 // Task 13-8A: List an Object's Keys
 // Problem Statement:
