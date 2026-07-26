@@ -39,7 +39,7 @@ console.log(checkTemperature(10)); // Expected: "Cold"
 console.log(checkTemperature(20)); // Expected: "Normal" -->
 
 
-Task 13-2B: Reverse a Number
+<!-- Task 13-2B: Reverse a Number
 Problem Statement:
 Write a function reverseNumber that takes a positive whole number and returns it with its digits reversed. (Hint: convert the number to a string first.)
 Input
@@ -61,7 +61,7 @@ function reverseNumber(num) {
 }
  
 console.log(reverseNumber(1234)); // Expected: 4321
-console.log(reverseNumber(7));    // Expected: 7
+console.log(reverseNumber(7));    // Expected: 7 -->
 
 
 Task 13-3A: Product of Digits
