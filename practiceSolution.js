@@ -209,14 +209,283 @@ console.log(isPalindrome("hello")); // Expected: false
 
 function findShortestWord(sentence) {
   let words = sentence.split(" ");
-  console.log(words)
+  console.log(words);
   let shortest = words[0];
   for (let word of words)
     if (word.length < shortest.length) {
       shortest = word;
     }
 
-  return shortest; 
+  return shortest;
+}
+console.log(findShortestWord("JavaScript is a fun language")); // Expected: "a"
+
+// Task 13-6A: Find the Second Smallest Number
+// Problem Statement:
+// Write a function findSecondSmallest that takes an array of numbers and returns the second smallest distinct value.
+// Input                Output
+// [10, 5, 8, 20, 15]   8
+
+// Starter Snippet:
+// // Input: an array of numbers
+// // Output: the second smallest number
+// // Returns: a number
+
+function findSecondSmallest(numbers) {
+  let smallest = Infinity;
+  let secondSmallest = Infinity;
+  // TODO: loop through and update smallest/secondSmallest correctly
+
+  for (const number of numbers) {
+    if (number < smallest) {
+      smallest = number;
+    }
+  }
+  for (const second of numbers) {
+    if (second !== smallest && second < secondSmallest) {
+      secondSmallest = second;
+    }
+  }
+  return secondSmallest;
 }
 
-console.log(findShortestWord("JavaScript is a fun language")); // Expected: "a"
+console.log(findSecondSmallest([10, 5, 8, 20, 15])); // Expected: 8
+console.log(findSecondSmallest([5, 8, 10])); // Expected: 8
+console.log(findSecondSmallest([2, 1, 3])); // Expected: 2
+
+// Task 13-6B: Count Multiples of Three
+// Problem Statement:
+// Write a function countMultiplesOfThree that takes an array of numbers and returns how many of them are divisible by 3.
+// Input
+// Output
+// [3, 4, 6, 7, 9, 10]
+// 3
+
+// Starter Snippet:
+// // Input: an array of numbers
+// // Output: how many numbers are divisible by 3
+// // Returns: a number
+
+// function countMultiplesOfThree(numbers) {
+//   let count = 0;
+//   // TODO: loop through and count multiples of 3
+
+//   return count;
+// }
+
+// console.log(countMultiplesOfThree([3, 4, 6, 7, 9, 10])); // Expected: 3
+
+// Task 13-7A: Average of All Numbers
+// Problem Statement:
+// Write a function averageOfArray that takes an array of numbers and returns their average.
+// Input
+// Output
+// [2, 4, 6]
+// 4
+
+// Starter Snippet:
+// // Input: an array of numbers
+// // Output: the average of all numbers
+// // Returns: a number
+
+// function averageOfArray(numbers) {
+//   let total = 0;
+//   // TODO: loop through, sum the numbers, then divide by the count
+
+//   return total;
+// }
+
+// console.log(averageOfArray([2, 4, 6])); // Expected: 4
+
+// Task 13-7B: Keep Only Even Numbers
+// Problem Statement:
+// Write a function keepEvenNumbers that takes an array of numbers and returns a new array with only the even numbers.
+// Input
+// Output
+// [3, -5, 8, -1, 0]
+// [8, 0]
+
+// Starter Snippet:
+// // Input: an array of numbers
+// // Output: array with only even numbers
+// // Returns: an array
+
+// function keepEvenNumbers(numbers) {
+//   let result = [];
+//   // TODO: loop and push only even numbers
+
+//   return result;
+// }
+
+// console.log(keepEvenNumbers([3, -5, 8, -1, 0])); // Expected: [8, 0]
+
+// Task 13-8A: List an Object's Keys
+// Problem Statement:
+// Write a function listKeys that takes an object and returns an array containing its property names (keys).
+// Input
+// Output
+// { name: "Sam", age: 25, city: "Dhaka" }
+// ["name", "age", "city"]
+
+// Starter Snippet:
+// // Input: an object
+// // Output: array of the object's keys
+// // Returns: an array
+
+// function listKeys(obj) {
+//   let keys = [];
+//   // TODO: loop through the object and collect its keys
+
+//   return keys;
+// }
+
+// console.log(listKeys({ name: "Sam", age: 25, city: "Dhaka" }));
+// // Expected: ["name", "age", "city"]
+
+// Task 13-8B: Get a Value or a Default
+// Problem Statement:
+// Write a function getValueOrDefault that takes an object, a key name, and a default value, and returns the object's value for that key if it exists, otherwise the default value.
+// Input
+// Output
+// person, key "age", default 0
+// 25
+// person, key "grade", default "N/A"
+// "N/A"
+
+// Starter Snippet:
+// // Input: an object, a key (string), a default value
+// // Output: the value at that key, or the default
+// // Returns: any value
+
+// function getValueOrDefault(obj, key, defaultValue) {
+//   // TODO: check if the key exists in the object
+
+// }
+
+// let person = { name: "Sam", age: 25 };
+// console.log(getValueOrDefault(person, "age", 0));        // Expected: 25
+// console.log(getValueOrDefault(person, "grade", "N/A"));  // Expected: "N/A"
+
+// Task 13-9: Long Words Above a Length, Then Their Count
+// Problem Statement:
+// Write two functions:
+// getWordsLongerThan — takes an array of words and a length threshold, and returns a new array containing every word whose length is greater than the threshold.
+// countArray — takes an array and returns how many elements it contains.
+// Then use the returned array from getWordsLongerThan as the input to countArray.
+// Input
+// Output
+// ["cat", "elephant", "dog", "hippopotamus", "ox"], threshold 3
+// Words longer than 3 → ["elephant", "hippopotamus"]
+// Count → 2
+
+// Starter Snippet:
+// // Input: an array of words, a length threshold
+// // Output: array of words longer than the threshold
+// // Returns: an array
+
+// function getWordsLongerThan(words, minLength) {
+//   let longWords = [];
+//   // TODO: loop, check condition, push the word
+
+//   return longWords;
+// }
+
+// // Input: an array
+// // Output: the number of elements in the array
+// // Returns: a number
+
+// function countArray(arr) {
+//   let count = 0;
+//   // TODO: write your loop here
+
+//   return count;
+// }
+
+// let words = ["cat", "elephant", "dog", "hippopotamus", "ox"];
+// let longWords = getWordsLongerThan(words, 3);
+// let total = countArray(longWords);
+
+// console.log(longWords); // Expected: ["elephant", "hippopotamus"]
+// console.log(total);     // Expected: 2
+
+// Task 13-10: Final Homework Set
+// These four tasks combine everything from Module 13. Each must be solved as a function that returns a value, with an Input/Output/Returns comment on top.
+// 13-10A: Perfect Square Checker
+// Problem Statement: Write a function isPerfectSquare that takes a number and returns true if it is a perfect square, otherwise false.
+// Input
+// Output
+// 16
+// true
+// 20
+// false
+
+// // Input: a number
+// // Output: true or false
+// // Returns: a boolean
+
+// function isPerfectSquare(num) {
+//   // TODO: write your logic here
+
+// }
+
+// console.log(isPerfectSquare(16)); // Expected: true
+// console.log(isPerfectSquare(20)); // Expected: false
+
+// 13-10B: Reverse the Word Order
+// Problem Statement: Write a function reverseWords that takes a sentence and returns it with the order of the words reversed (the letters inside each word stay the same).
+// Input
+// Output
+// "hello world"
+// "world hello"
+
+// // Input: a sentence (string)
+// // Output: sentence with word order reversed
+// // Returns: a string
+
+// function reverseWords(sentence) {
+//   // TODO: split into words, reverse the order, and join back together
+
+// }
+
+// console.log(reverseWords("hello world")); // Expected: "world hello"
+
+// 13-10C: Remove Duplicate Values from an Array
+// Problem Statement: Write a function removeDuplicates that takes an array of numbers and returns a new array where each value appears only once, keeping the first occurrence.
+// Input
+// Output
+// [1, 2, 2, 3, 4, 4, 5]
+// [1, 2, 3, 4, 5]
+
+// // Input: an array of numbers
+// // Output: array with duplicates removed
+// // Returns: an array
+
+// function removeDuplicates(numbers) {
+//   let unique = [];
+//   // TODO: write your logic here
+
+//   return unique;
+// }
+
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Expected: [1, 2, 3, 4, 5]
+
+// 13-10D: Invert an Object
+// Problem Statement: Write a function invertObject that takes an object with unique values and returns a new object where each original value becomes a key, and each original key becomes its value.
+// Input
+// Output
+// { a: 1, b: 2, c: 3 }
+// { 1: "a", 2: "b", 3: "c" }
+
+// // Input: an object (values are unique)
+// // Output: a new object with keys and values swapped
+// // Returns: an object
+
+// function invertObject(obj) {
+//   let inverted = {};
+//   // TODO: loop through obj and swap each key/value pair into inverted
+
+//   return inverted;
+// }
+
+// console.log(invertObject({ a: 1, b: 2, c: 3 }));
+// // Expected: { 1: "a", 2: "b", 3: "c" }

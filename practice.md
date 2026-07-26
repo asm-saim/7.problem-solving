@@ -189,7 +189,7 @@ console.log(isPalindrome("level")); // Expected: true
 console.log(isPalindrome("hello")); // Expected: false
 
 
-Task 13-5B: Find the Shortest Word in a Sentence
+<!-- Task 13-5B: Find the Shortest Word in a Sentence
 Matches lesson: 13-5 (String problems — split + loops)
 Problem Statement:
 Write a function findShortestWord that takes a sentence and returns the shortest word in it.
@@ -213,7 +213,7 @@ function findShortestWord(sentence) {
 }
  
 console.log(findShortestWord("JavaScript is a fun language")); // Expected: "a"
-
+ -->
 
 Task 13-6A: Find the Second Smallest Number
 Problem Statement:

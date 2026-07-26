@@ -6,3 +6,10 @@ firstly, we need to split(S-A) , then join(A-S)
 
 //includes(a single value expected) exists both string and array. 
 
+## for find the smallest, use ->  
+let smallest = Infinity; (A number bigger than every other number)
+
+## for find the largest, use  ->  
+let largest = -Infinity; (A number smaller than every other number)
+
+
