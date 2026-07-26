@@ -18,8 +18,7 @@ function numberType(number) {
     return "Zero";
   }
 }
-console.log(numberType(0))
-
+console.log(numberType(0));
 
 // Task 13-2A: Hot, Cold, or Normal
 // Problem Statement:
@@ -41,3 +40,29 @@ function tempChecker(value) {
   return "Normal";
 }
 console.log(tempChecker(20));
+
+// Task 13-2B: Reverse a Number
+// Problem Statement:
+// Write a function reverseNumber that takes a positive whole number and returns it with its digits reversed. (Hint: convert the number to a string first.)
+// Input
+// Output
+// 1234
+// 4321
+// 7
+// 7
+
+// Starter Snippet:
+// // Input: a number
+// // Output: the number with digits reversed
+// // Returns: a number
+
+function reverseNumber(num) {
+  let str = num.toString();
+  str = str.split("").reverse().join("");
+  let number = parseInt(str);
+  return number;
+  // TODO: build the reversed string, then convert back to a number
+}
+
+console.log(reverseNumber(1234)); // Expected: 4321
+console.log(reverseNumber(7)); // Expected: 7
