@@ -174,25 +174,28 @@ console.log(removeFirstAndLast("hello")); // Expected: "ell"
 // Task 13-5A: Check for a Palindrome
 // Problem Statement:
 // Write a function isPalindrome that takes a string and returns true if it reads the same forwards and backwards, otherwise false. Assume lowercase, no spaces.
-// Input
-// Output
-// "level"
-// true
-// "hello"
-// false
+//  Input     Output
+// "level"   true
+// "hello"   false
 
 // Starter Snippet:
 // // Input: a string
 // // Output: true or false
 // // Returns: a boolean
 
-// function isPalindrome(str) {
-//   // TODO: reverse the string and compare it to the original
+function isPalindrome(str) {
+  // TODO: reverse the string and compare it to the original
+let strToArr=str.split("");
 
-// }
+  if (strToArr.join("") === strToArr.reverse().join("")) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-// console.log(isPalindrome("level")); // Expected: true
-// console.log(isPalindrome("hello")); // Expected: false
+console.log(isPalindrome("level")); // Expected: true
+console.log(isPalindrome("hello")); // Expected: false
 
 // Task 13-5B: Find the Shortest Word in a Sentence
 // Matches lesson: 13-5 (String problems — split + loops)
