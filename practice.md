@@ -64,7 +64,7 @@ console.log(reverseNumber(1234)); // Expected: 4321
 console.log(reverseNumber(7));    // Expected: 7 -->
 
 
-Task 13-3A: Product of Digits
+<!-- Task 13-3A: Product of Digits
 Problem Statement:
 Write a function productOfDigits that takes a positive whole number and returns the product of its individual digits.
 Input
@@ -89,7 +89,7 @@ function productOfDigits(num) {
 }
  
 console.log(productOfDigits(123));  // Expected: 6
-console.log(productOfDigits(4040)); // Expected: 0
+console.log(productOfDigits(4040)); // Expected: 0 -->
 
 
 Task 13-3B: Odd Numbers Up To N

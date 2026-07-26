@@ -67,7 +67,6 @@ function reverseNumber(num) {
 console.log(reverseNumber(1234)); // Expected: 4321
 console.log(reverseNumber(7)); // Expected: 7
 
-
 // Task 13-3A: Product of Digits
 // Problem Statement:
 // Write a function productOfDigits that takes a positive whole number and returns the product of its individual digits.
@@ -78,25 +77,49 @@ console.log(reverseNumber(7)); // Expected: 7
 // 4040
 // 0
 
-
 // Starter Snippet:
 // Input: a number
 // Output: product of its digits
 // Returns: a number
- 
+
 function productOfDigits(num) {
   let str = num.toString();
-  str=str.split("")
+  str = str.split("");
   let total = 1;
-  for(let number of str )
-  {
-    total=parseInt(total)*number;
+  for (let number of str) {
+    total = parseInt(total) * number;
   }
-//  TODO: loop through each character, convert to number, and multiply
+  //  TODO: loop through each character, convert to number, and multiply
 
- 
   return total;
 }
- 
-console.log(productOfDigits(123));  // Expected: 6
+
+console.log(productOfDigits(123)); // Expected: 6
 console.log(productOfDigits(4040)); // Expected: 0
+
+// Task 13-3B: Odd Numbers Up To N
+// Problem Statement:
+// Write a function getOddNumbers that takes a number n and returns an array of all odd numbers from 1 to n (inclusive).
+// Input
+// Output
+// 10
+// [1, 3, 5, 7, 9]
+
+// Starter Snippet:
+// // Input: a number
+// // Output: array of odd numbers from 1 to n
+// // Returns: an array
+
+function getOddNumbers(n) {
+  let odds = [];
+  // TODO: write your loop here
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 === 1) {
+      odds.push(i);
+    }
+  }
+  return odds;
+}
+
+console.log(getOddNumbers(10));
+// // Expected: [1, 3, 5, 7, 9]
