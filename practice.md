@@ -92,7 +92,7 @@ console.log(productOfDigits(123));  // Expected: 6
 console.log(productOfDigits(4040)); // Expected: 0 -->
 
 
-Task 13-3B: Odd Numbers Up To N
+<!-- Task 13-3B: Odd Numbers Up To N
 Problem Statement:
 Write a function getOddNumbers that takes a number n and returns an array of all odd numbers from 1 to n (inclusive).
 Input
@@ -114,7 +114,7 @@ function getOddNumbers(n) {
 }
  
 console.log(getOddNumbers(10));
-// Expected: [1, 3, 5, 7, 9]
+// Expected: [1, 3, 5, 7, 9] -->
 
 
 Task 13-4A: Count Vowels

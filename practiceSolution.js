@@ -123,3 +123,97 @@ function getOddNumbers(n) {
 
 console.log(getOddNumbers(10));
 // // Expected: [1, 3, 5, 7, 9]
+
+// Task 13-4A: Count Vowels
+// Problem Statement:
+// Write a function countVowels that takes a string and returns how many vowels it contains. Assume the string only contains lowercase letters, no spaces.
+// Input
+// Output
+// "javascript"
+// 3
+
+// Starter Snippet:
+// // Input: a string (lowercase letters only)
+// // Output: count of vowels
+// // Returns: a number
+
+function countVowels(str) {
+  let vowels = "aeiou";
+
+  let count = 0;
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count = count + 1;
+    }
+  }
+
+  return count;
+}
+
+console.log(countVowels("javascript")); // Expected: 3
+
+// Task 13-4B: Remove First and Last Character
+// Problem Statement:
+// Write a function removeFirstAndLast that takes a string and returns it with the first and last character removed.
+// Input    Output
+// "hello"  "ell"
+
+// Starter Snippet:
+// Input: a string
+// Output: the string without its first and last character
+// Returns: a string
+
+function removeFirstAndLast(str) {
+  // TODO: slice out the middle portion of the string
+  const sliced = str.slice(1, 4);
+  return sliced;
+}
+
+console.log(removeFirstAndLast("hello")); // Expected: "ell"
+
+// Task 13-5A: Check for a Palindrome
+// Problem Statement:
+// Write a function isPalindrome that takes a string and returns true if it reads the same forwards and backwards, otherwise false. Assume lowercase, no spaces.
+// Input
+// Output
+// "level"
+// true
+// "hello"
+// false
+
+// Starter Snippet:
+// // Input: a string
+// // Output: true or false
+// // Returns: a boolean
+
+// function isPalindrome(str) {
+//   // TODO: reverse the string and compare it to the original
+
+// }
+
+// console.log(isPalindrome("level")); // Expected: true
+// console.log(isPalindrome("hello")); // Expected: false
+
+// Task 13-5B: Find the Shortest Word in a Sentence
+// Matches lesson: 13-5 (String problems — split + loops)
+// Problem Statement:
+// Write a function findShortestWord that takes a sentence and returns the shortest word in it.
+// Input
+// Output
+// "JavaScript is a fun language"
+// "a"
+
+// Starter Snippet:
+// // Input: a sentence (string)
+// // Output: the shortest word
+// // Returns: a string
+
+// function findShortestWord(sentence) {
+//   let words = sentence.split(" ");
+//   let shortest = words[0];
+//   // TODO: loop through words and compare lengths
+
+//   return shortest;
+// }
+
+// console.log(findShortestWord("JavaScript is a fun language")); // Expected: "a"
