@@ -394,30 +394,40 @@ console.log(getValueOrDefault(person, "grade", "N/A")); // Expected: "N/A"
 // // Output: array of words longer than the threshold
 // // Returns: an array
 
-// function getWordsLongerThan(words, minLength) {
-//   let longWords = [];
-//   // TODO: loop, check condition, push the word
+function getWordsLongerThan(words, minLength) {
+  let longWords = [];
+  // TODO: loop, check condition, push the word
+  for (let word of words) {
+    if (word.length > minLength) {
+      longWords.push(word);
+    }
+  }
 
-//   return longWords;
-// }
+  return longWords;
+}
 
-// // Input: an array
-// // Output: the number of elements in the array
-// // Returns: a number
+// Input: an array
+// Output: the number of elements in the array
+// Returns: a number
 
-// function countArray(arr) {
-//   let count = 0;
-//   // TODO: write your loop here
+function countArray(arr) {
+  let count = 0;
+  // TODO: write your loop here
 
-//   return count;
-// }
+  for(let number of arr)
+  {
+    count+=1;
+  }
 
-// let words = ["cat", "elephant", "dog", "hippopotamus", "ox"];
-// let longWords = getWordsLongerThan(words, 3);
-// let total = countArray(longWords);
+  return count;
+}
 
-// console.log(longWords); // Expected: ["elephant", "hippopotamus"]
-// console.log(total);     // Expected: 2
+let words = ["cat", "elephant", "dog", "hippopotamus", "ox"];
+let longWords = getWordsLongerThan(words, 3);
+let total = countArray(longWords);
+
+console.log(longWords); // Expected: ["elephant", "hippopotamus"]
+console.log(total); // Expected: 2
 
 // Task 13-10: Final Homework Set
 // These four tasks combine everything from Module 13. Each must be solved as a function that returns a value, with an Input/Output/Returns comment on top.
