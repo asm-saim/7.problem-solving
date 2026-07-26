@@ -266,14 +266,20 @@ console.log(findSecondSmallest([2, 1, 3])); // Expected: 2
 // // Output: how many numbers are divisible by 3
 // // Returns: a number
 
-// function countMultiplesOfThree(numbers) {
-//   let count = 0;
-//   // TODO: loop through and count multiples of 3
+function countMultiplesOfThree(numbers) {
+  let count = 0;
+  // TODO: loop through and count multiples of 3
 
-//   return count;
-// }
+  for (let number of numbers)
+    if (number % 3 === 0) {
+      count += 1;
+    }
 
-// console.log(countMultiplesOfThree([3, 4, 6, 7, 9, 10])); // Expected: 3
+  return count;
+}
+console.log(countMultiplesOfThree([3, 4, 6, 7, 9, 10])); // Expected: 3
+
+
 
 // Task 13-7A: Average of All Numbers
 // Problem Statement:
