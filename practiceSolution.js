@@ -506,12 +506,16 @@ console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Expected: [1, 2, 3, 4, 
 // // Output: a new object with keys and values swapped
 // // Returns: an object
 
-// function invertObject(obj) {
-//   let inverted = {};
-//   // TODO: loop through obj and swap each key/value pair into inverted
+function invertObject(obj) {
+  let inverted = {};
+  // TODO: loop through obj and swap each key/value pair into inverted
+  for (let i in obj) {
+    const keys = obj[i];
+    inverted[keys] = i;
+  }
 
-//   return inverted;
-// }
+  return inverted;
+}
 
-// console.log(invertObject({ a: 1, b: 2, c: 3 }));
-// // Expected: { 1: "a", 2: "b", 3: "c" }
+console.log(invertObject({ a: 1, b: 2, c: 3 }));
+// Expected: { 1: "a", 2: "b", 3: "c" }
