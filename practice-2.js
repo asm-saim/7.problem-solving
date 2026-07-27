@@ -22,14 +22,38 @@ function fact(number) {
 const value1 = 5;
 console.log(fact(value1));
 
-//
-function fact2(value){
-  let num=1;
-  for(let i=1;i<=value;i++)
-  {
-    num*=i;
+//type:2
+function fact2(value) {
+  let num = 1;
+  for (let i = 1; i <= value; i++) {
+    num *= i;
   }
-  return num
+  return num;
 }
 
-console.log(fact2(4))
+console.log(fact2(4));
+
+//Problem:4FizBuzz(1 to n)
+// loop through numbers from 1 to n.
+
+// loop the number from 1 to navigation,
+// if the number is divisible by 3, print Fixx
+// if divisible by 5, print buzz.buzz
+// if divisible by 3 and 5 print FixxBuzz.
+// else print "Dump"
+
+function numGenerator(num) {
+  for (let i = 1; i <= num; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log(i, "FixxBuz");
+    }
+    if (i % 3 === 0) {
+      console.log(i, "Fizz");
+    } else if (i % 5 === 0) {
+      console.log(i, "Buzz");
+    } else {
+      console.log(i,"Dump");
+    }
+  }
+}
+numGenerator(15);
