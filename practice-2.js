@@ -21,3 +21,15 @@ function fact(number) {
 
 const value1 = 5;
 console.log(fact(value1));
+
+//
+function fact2(value){
+  let num=1;
+  for(let i=1;i<=value;i++)
+  {
+    num*=i;
+  }
+  return num
+}
+
+console.log(fact2(4))
