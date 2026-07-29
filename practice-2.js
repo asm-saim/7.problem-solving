@@ -104,3 +104,12 @@ function isPalindrome(value) {
   }
 }
 console.log(isPalindrome("level"));
+
+//count words in a sentence:
+function wordCount(sentence) {
+  let word = sentence.split(" ").length;
+
+  return word;
+}
+
+console.log(wordCount("I am a coder"));
