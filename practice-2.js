@@ -89,3 +89,18 @@ function vowelCount(value2) {
   return count;
 }
 console.log(vowelCount("Programming Hero"));
+
+//plendrome checker:
+
+function isPalindrome(value) {
+  let str = "";
+  for (let i = value.length - 1; i >= 0; i--) {
+    str += value[i];
+  }
+  if (value === str) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isPalindrome("level"));
