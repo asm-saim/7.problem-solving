@@ -52,8 +52,14 @@ function numGenerator(num) {
     } else if (i % 5 === 0) {
       console.log(i, "Buzz");
     } else {
-      console.log(i,"Dump");
+      console.log(i, "Dump");
     }
   }
 }
 numGenerator(15);
+
+//reverse a string:
+let str = "programming";
+
+str = str.split("").reverse().join("");
+console.log(str);
