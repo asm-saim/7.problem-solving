@@ -139,3 +139,28 @@ function smallest(value) {
 }
 
 console.log(smallest([56, 22, 788, 432, 1, 123, 68]));
+
+//sum and length of an array:
+function sumAvg(value) {
+  let sum = 0;
+  for (let i of value) {
+    sum += i;
+  }
+  let avg = sum / value.length;
+  return sum / value.length;
+}
+
+console.log(sumAvg([23, 55, 77, 22, 77, 99]));
+
+//find numbers those are greater than a specific number.
+function greaterThan(array, number) {
+  let newValue = [];
+
+  for (let i of array) {
+    if (i > number) {
+      newValue.push(i);
+    }
+  }
+  return newValue;
+}
+console.log(greaterThan([244, 556, 33, 39, 456, 78, 22, 5, 7, 23], 55));
