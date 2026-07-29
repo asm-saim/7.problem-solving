@@ -198,5 +198,30 @@ function getStudents(values) {
   }
 
   console.log("Total Properties:", Object.keys(values).length);
+  console.log(values.hasOwnProperty("email"));
 }
 getStudents(student);
+
+//find oout sum of even and the arry of even numbers:
+const numbers = [23, 45, 66, 32, 11, 55, 788, 21, 45, 23, 16];
+
+function even(num) {
+  let newNum = [];
+  for (let i of num) {
+    if (i % 2 === 0) {
+      newNum.push(i);
+    }
+  }
+  return newNum;
+}
+
+function sumEven(val) {
+  let totalz = 0;
+  for (let i of val) {
+    totalz += i;
+  }
+  return totalz;
+}
+console.log(sumEven(even(numbers)));
+
+console.log(even(numbers));
