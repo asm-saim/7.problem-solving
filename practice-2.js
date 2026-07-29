@@ -75,3 +75,17 @@ function str2(value) {
   return reverse;
 }
 console.log(str2("Bangladesh"));
+
+//vowel count:
+function vowelCount(value2) {
+  let vowel = "aeiou";
+  let count = 0;
+  for (let i = 0; i <= value2.length; i++) {
+    if (vowel.includes(value2[i])) {
+      count += 1;
+    }
+  }
+
+  return count;
+}
+console.log(vowelCount("Programming Hero"));
