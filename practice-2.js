@@ -182,3 +182,21 @@ const info = {
   netWorth: "200B",
 };
 console.log(obj(info));
+
+// print keys, values, total properties, total objet:
+const student = {
+  name: "Sakil",
+  class: 10,
+  roll: 2,
+  age: 12,
+};
+function getStudents(values) {
+  for (let i in student) {
+    // console.log(i);
+    // console.log(student[i]);
+    console.log(i, ":", student[i]);
+  }
+
+  console.log("Total Properties:", Object.keys(values).length);
+}
+getStudents(student);
