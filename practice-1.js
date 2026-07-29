@@ -512,6 +512,7 @@ function invertObject(obj) {
   for (let i in obj) {
     const keys = obj[i];
     inverted[keys] = i;
+    
   }
 
   return inverted;

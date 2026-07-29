@@ -164,3 +164,21 @@ function greaterThan(array, number) {
   return newValue;
 }
 console.log(greaterThan([244, 556, 33, 39, 456, 78, 22, 5, 7, 23], 55));
+
+//get objet key and values:
+
+function obj(object) {
+  let inFormation = {};
+  for (let i in object) {
+    inFormation[i] = object[i];
+  }
+  return inFormation;
+}
+
+const info = {
+  name: "SpaceX",
+  location: "USA",
+  workForce: 2300,
+  netWorth: "200B",
+};
+console.log(obj(info));
