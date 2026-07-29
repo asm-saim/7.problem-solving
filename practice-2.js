@@ -113,3 +113,29 @@ function wordCount(sentence) {
 }
 
 console.log(wordCount("I am a coder"));
+
+//Largest and smallest:
+function largest(array) {
+  let largest = array[0];
+
+  for (let i of array) {
+    if (largest < i) {
+      largest = i;
+    }
+  }
+  return largest;
+}
+console.log(largest([23, 55, 3, 55, 1112, 455, 2223]));
+
+//smallest:
+function smallest(value) {
+  let smallestNum = value[0];
+  for (let i of value)
+    if (i < smallestNum) {
+      smallestNum = i;
+    }
+
+  return smallestNum;
+}
+
+console.log(smallest([56, 22, 788, 432, 1, 123, 68]));
