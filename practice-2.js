@@ -63,3 +63,15 @@ let str = "programming";
 
 str = str.split("").reverse().join("");
 console.log(str);
+
+//reverse in another way:
+function str2(value) {
+  let reverse = "";
+
+  for (let i = value.length - 1; i >= 0; i--) {
+    // console.log(value[i]);
+    reverse += value[i];
+  }
+  return reverse;
+}
+console.log(str2("Bangladesh"));
